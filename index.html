@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Graph plotter</title>
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="content">
+		<h1 class="header">Graph Plotter</h1>
+		<h3>Select the type of graph</h3>
+		<ul class="list">
+			<li>Line</li>
+			<li>Bar Graph</li>
+			<li>Pie Chart</li>
+			<li>Histogram</li>
+			<li>Scatter</li>
+		</ul>
+		<h3>Input points on x-axis</h3>
+		<input type="text" class="Xpoints" name="field" placeholder="input x points">
+		<h3>Input points on y-axis</h3>
+		<input type="text" class="Ypoints" name="field" placeholder="input y points">
+		<button type="submit" onclick="plot_graph();" style="margin-top: 25px;">Plot Graph</button>
+	</div>
+	<div id="graph"></div>
+	<div style="clear: both;"></div>
+	<script type="text/javascript" src="script.js" ></script>
+</body>
+</html>
